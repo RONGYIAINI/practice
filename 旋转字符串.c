@@ -27,7 +27,7 @@ void copy(char *arr, char *str, int x) {
 //旋转函数
 //把复制的数组  从原数组的倒数第k个数开始复制过去
 //原数组旋转后变成 CDECD ,复制的数组为AB, 复制上去后成为旋转数组CDEAB
-int rotate(char *arr, char *str, int x, int n) {   //要旋转的数组, 保存的数组,旋转的次数,数组长度
+void rotate(char *arr, char *str, int x, int n) {   //要旋转的数组, 保存的数组,旋转的次数,数组长度
 	copy(arr, str, x, n);
 	swap(arr, x, n);
 	int j = 0;
